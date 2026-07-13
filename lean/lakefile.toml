@@ -1,0 +1,6 @@
+name = "metadata-layout-validation"
+version = "0.1.0"
+defaultTargets = ["MetadataLayout"]
+
+[[lean_lib]]
+name = "MetadataLayout"
