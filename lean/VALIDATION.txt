@@ -1,0 +1,19 @@
+Validation date: 2026-07-12
+Lean version: 4.31.0
+Lean commit: 68218e876d2a38b1985b8590fff244a83c321783
+
+Command:
+  lake build
+
+Result:
+  Built MetadataLayout
+  Build completed successfully (3 jobs).
+
+Direct checker command:
+  lean MetadataLayout.lean
+
+Result:
+  exit code 0; no diagnostics
+
+Source placeholder check:
+  no occurrences of `sorry`, `admit`, or `axiom` in MetadataLayout.lean
