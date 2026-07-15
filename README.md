@@ -12,7 +12,7 @@ failure points to a particular type form or validity condition.
 | M2 | `str` | lengths 0 and 5 | size equals length, align 1 | exact assertion | string rule; Propositions 1 and 2 |
 | M3 | `[u32]` | lengths 0 and 10 | sizes 0 and 40, align 4 | exact assertion | slice rule; Propositions 1 and 2 |
 | M4 | `[u32]` | largest representable length | successful boundary layout | computed boundary oracle | checked multiplication and target bound |
-| M5 | `str`, `[u32]` | `usize::MAX` | all checked queries reject | `None`; unchecked not called | partiality of checked layout |
+| M5 | `str`, `[u32]` | `usize::MAX` | public checked wrappers reject; direct checked methods are tested for coherence | public queries return `None`; direct-method discrepancy documented | partiality and cross-layer coherence |
 | M6 | `[[u8]; 2]` | recursive child length 3 | size 6, align 1 | metadata obtained from reference | recursive array metadata |
 | M7 | `[[u8]]` | outer length 2, child length 3 | size 6, align 1 | metadata obtained from reference | recursive slice metadata |
 | M8 | `[[u8; 3]]` | outer length 2 | size 6, align 1 | metadata obtained from reference | ordinary slice of arrays |
