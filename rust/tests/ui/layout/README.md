@@ -47,7 +47,7 @@ could be recorded.
 |---|---|---|
 | M1 | PASS | All six size/alignment/layout queries agree for `u32`: size 4, alignment 4. |
 | M2--M4 | PASS | String and slice ordinary/boundary assertions all completed. |
-| M5 | **FAIL** | Public checked wrappers reject, but some direct `MetaSized` checked methods accept the same invalid metadata. |
+| M5 | **PARTIAL** | Public checked wrappers reject as expected; direct `MetaSized` checked methods are not coherent. |
 | M6--M8 | PASS | All recursive array/slice metadata assertions completed. |
 | M9--M10 | PASS | Aggregate layout and offset/padding assertions completed. |
 | M11 | PASS | Trait-object coercion preserved size 4 and alignment 4. |
