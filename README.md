@@ -1,5 +1,9 @@
 # A Metadata-First Design for Extensible Dynamically Sized Types in Rust
 
+# Links
+- The compiler and standard-library prototype for extended Rust: [[LINK]](https://github.com/zachs18/rust/tree/grad-project) 
+- The chronological performance branch: [[LINK]](https://github.com/zachs18/rust/tree/grad-project-perf)
+
 # Validation matrix and traceability
 
 The matrix is a coverage table, not a requirement to create one source file per
